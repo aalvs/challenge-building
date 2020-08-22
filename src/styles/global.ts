@@ -13,7 +13,9 @@ import { createGlobalStyle } from "styled-components";
     }
 
     body {
-        background-color: #000000;
+
+        /*background: linear-gradient(#043385, #1797D7); */
+        background: linear-gradient(#2CA4F4, #C2E6FB);
     }
 
     #root {
@@ -21,16 +23,5 @@ import { createGlobalStyle } from "styled-components";
         align-items: center;
         justify-content: center;
     }
-
-    .container {
-        width: 90vw;
-        max-width: 700px;
-    }
-
-    @media (min-width: 700px) {
-        #root {
-            font-size: 62.5%;
-        }
-    }
-
+    
  `;

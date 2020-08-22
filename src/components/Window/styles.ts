@@ -6,14 +6,15 @@ export const WindowStyle = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    grid-gap: 4rem;
+    grid-gap: 30px;
     
 
     .buttons-window {
-        width: 5rem;
-        height: 5rem;
-        background-color: #ffffff;
+        width: 30px;
+        height: 40px;
+        background: #044da8;
+        /*background: #ffd700;*/
         cursor: pointer;
-        border: none;
+        border: 1px solid black;
     }
 `;
