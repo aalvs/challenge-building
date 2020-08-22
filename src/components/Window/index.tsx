@@ -1,22 +1,22 @@
 import React from 'react';
 
+import { WindowStyle } from './styles'
 
-import './styles.css'
-
-
-function Window() {
+const Window: React.FC = () => {
     return (
-        <div className="window-container">
+
+        <WindowStyle>
 
             <button className="buttons-window">
 
             </button>
 
             <button className="buttons-window">
-                    
+        
             </button>
 
-         </div>
+        </WindowStyle>
+        
     );
 }
 

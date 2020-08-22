@@ -1,21 +1,23 @@
 import React from 'react';
 
 import Window from '../Window';
-
-import './styles.css'
-
+import { BuildingStyle } from './styles';
 
 function HomeBuilding() {
     return (
 
         <div id="structure-building" className="container">
-           
-            <Window />
-            <Window />
-            <Window />
-            <Window />
-            <Window />
-            <Window />
+
+            <BuildingStyle>
+
+                <Window />
+                <Window />
+                <Window />
+                <Window />
+                <Window />
+                <Window />
+
+            </BuildingStyle>
             
         </div>
     );

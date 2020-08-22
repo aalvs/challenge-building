@@ -1,12 +1,17 @@
 import React from 'react';
+import { ThemeProvider } from 'styled-components';
 import HomeBuilding from './components/HomeBuilding';
-import './styles/global.css'
+import GlobalStyle from './styles/global'
+import light from './styles/themes/light';
 
 function App() {
   return (
-    <div className="App">
-      <HomeBuilding />
-    </div>
+    <ThemeProvider theme={light}>
+      <div className="App">
+        <GlobalStyle />
+        <HomeBuilding />
+      </div>
+    </ThemeProvider>
   );
 }
 
