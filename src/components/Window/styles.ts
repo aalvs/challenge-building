@@ -9,7 +9,7 @@ export const WindowStyle = styled.div`
     grid-gap: 30px;
     
 
-    .buttons-window {
+    .window {
         width: 30px;
         height: 40px;
         background: #044da8;

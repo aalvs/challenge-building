@@ -7,13 +7,13 @@ const Window: React.FC = () => {
 
         <WindowStyle>
 
-            <button className="buttons-window">
+            <div className="window">
 
-            </button>
+            </div>
 
-            <button className="buttons-window">
+            <div className="window">
         
-            </button>
+            </div>
 
         </WindowStyle>
         
