@@ -8,7 +8,7 @@ export const BuildingStyle = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #E5F7FE;
+    background: ${props => props.theme.colors.Building};
     padding-top: 50px;
 
     &:before {
@@ -17,7 +17,7 @@ export const BuildingStyle = styled.div`
     width: 20px;
     left: -20px;
     bottom: 7px;
-    background-color: #50A8E3;
+    background: ${props => props.theme.colors.BuildingTrid};
     content: '';
     transform: skewY(40deg);
     -webkit-transform: skewY(40deg);
@@ -29,7 +29,7 @@ export const BuildingStyle = styled.div`
     width: 145px;
     left: -10px;
     top: -17px;
-    background-color: #50A8E3;
+    background: ${props => props.theme.colors.BuildingTrid};
     content: '';
     transform: skewX(50deg);
     -webkit-transform: skewX(50deg);

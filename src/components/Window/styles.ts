@@ -12,8 +12,7 @@ export const WindowStyle = styled.div`
     .window {
         width: 30px;
         height: 40px;
-        background: #044da8;
-        /*background: #ffd700;*/
+        background: ${props => props.theme.colors.Window};
         cursor: pointer;
         border: 1px solid black;
     }

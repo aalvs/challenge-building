@@ -13,7 +13,7 @@ import { createGlobalStyle } from "styled-components";
     }
 
     body {
-        background: linear-gradient(#2CA4F4, #C2E6FB);
+        background: ${props => props.theme.colors.Sky};
     }
 
     #root {
