@@ -13,8 +13,6 @@ import { createGlobalStyle } from "styled-components";
     }
 
     body {
-
-        /*background: linear-gradient(#043385, #1797D7); */
         background: linear-gradient(#2CA4F4, #C2E6FB);
     }
 
