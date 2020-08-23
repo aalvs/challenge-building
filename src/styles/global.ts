@@ -10,9 +10,6 @@ import { createGlobalStyle } from "styled-components";
 
     html, body, #root {
         height: 100vh;
-    }
-
-    body {
         background: ${props => props.theme.colors.Sky};
     }
 

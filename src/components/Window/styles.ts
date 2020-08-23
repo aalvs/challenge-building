@@ -9,11 +9,18 @@ export const WindowStyle = styled.div`
     grid-gap: 30px;
     
 
-    .window {
+    .window-light {
         width: 30px;
         height: 40px;
-        background: ${props => props.theme.colors.Window};
+        background: ${props => props.theme.colors.WindowOff};
         cursor: pointer;
-        border: 1px solid black;
     }
+
+    .window-dark {
+        width: 30px;
+        height: 40px;
+        background: ${props => props.theme.colors.WindowOn};
+        cursor: pointer;
+    }
+
 `;

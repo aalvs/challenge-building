@@ -7,8 +7,11 @@ declare module 'styled-components' {
         colors: {
             Sky: string,
             Building: string,
-            Window: string,
+            WindowOn: string,
+            WindowOff: string,
             BuildingTrid: string,
+            Sun: string,
+            Moon: string,
         }
     }
 }

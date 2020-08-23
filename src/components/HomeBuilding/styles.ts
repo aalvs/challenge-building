@@ -2,14 +2,14 @@ import styled from 'styled-components';
 
 export const BuildingStyle = styled.div`
    
-    position: absolute;
+    position: relative;
     width: 145px;
-    height: 450px;
+    height: 440px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background: ${props => props.theme.colors.Building};
-    padding-top: 50px;
+    padding-top: 20px;
 
     &:before {
     position: absolute;

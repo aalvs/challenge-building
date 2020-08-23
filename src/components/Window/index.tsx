@@ -2,22 +2,19 @@ import React from 'react';
 
 import { WindowStyle } from './styles'
 
+
 const Window: React.FC = () => {
+
     return (
-
-        <WindowStyle>
-
-            <div className="window">
-
+        <WindowStyle>           
+            <div className="window-light">
+                
             </div>
 
-            <div className="window">
-        
+            <div className="window-light">
+                
             </div>
-
-        </WindowStyle>
-        
+        </WindowStyle>    
     );
 }
-
 export default Window;
