@@ -4,7 +4,7 @@ export const BuildingStyle = styled.div`
    
     position: relative;
     width: 145px;
-    height: 440px;
+    height: 510px;
     display: flex;
     flex-direction: column;
     align-items: center;

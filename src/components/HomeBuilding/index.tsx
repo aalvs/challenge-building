@@ -9,11 +9,6 @@ function HomeBuilding() {
         <div id="structure-building" className="container">
             <BuildingStyle>
                 <Window />
-                <Window />
-                <Window />
-                <Window />
-                <Window />
-                <Window />
             </BuildingStyle> 
         </div>
     );
