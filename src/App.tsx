@@ -8,13 +8,17 @@ import Sunset from './components/Sunset';
 
 function App() {
 
-  const [darktheme, setDarkTheme] = useState(false);
-  
+  const [theme, setDarkTheme] = useState(light);
+
+  const toggleTheme = () => {
+    setDarkTheme(theme.title === 'light' ? dark : light);
+  }
+
   return (
-    <ThemeProvider theme={darktheme ? dark : light }>
+    <ThemeProvider theme={theme}>
       <div className="App">
         <GlobalStyle />
-        <Sunset />
+        <Sunset toggleTheme={ toggleTheme } />
         <HomeBuilding />
       </div>
     </ThemeProvider>

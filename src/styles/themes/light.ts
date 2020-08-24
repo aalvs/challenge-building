@@ -8,6 +8,5 @@ export default {
         WindowOff: '#044da8',
         BuildingTrid: '#50A8E3',
         Sun: '#ffff77',
-        Moon: '#ffffff',
     }
 }

@@ -9,7 +9,7 @@ export const WindowStyle = styled.div`
     grid-gap: 30px;
     
 
-    .window-light {
+    .window {
         width: 30px;
         height: 40px;
         background: ${props => props.theme.colors.WindowOff};
@@ -20,6 +20,18 @@ export const WindowStyle = styled.div`
         width: 30px;
         height: 40px;
         background: ${props => props.theme.colors.WindowOn};
+        cursor: pointer;
+    }
+
+    .window input {
+        display: none;
+    }
+
+    .window input + label:before {
+        content: "";
+        width: 30px;
+        height: 30px;
+        background-color: red;
         cursor: pointer;
     }
 

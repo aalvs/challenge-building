@@ -11,7 +11,6 @@ declare module 'styled-components' {
             WindowOff: string,
             BuildingTrid: string,
             Sun: string,
-            Moon: string,
         }
     }
 }

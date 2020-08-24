@@ -7,12 +7,14 @@ const Window: React.FC = () => {
 
     return (
         <WindowStyle>           
-            <div className="window-light">
-                
+            <div className="window">
+                <input id="check-window-1" type="checkbox"/>
+                <label htmlFor="check-window-1"></label>
             </div>
 
-            <div className="window-light">
-                
+            <div className="window">
+                <input id="check-window-1" type="checkbox"/>
+                <label htmlFor="check-window-1"></label>
             </div>
         </WindowStyle>    
     );

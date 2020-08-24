@@ -2,11 +2,15 @@ import React from 'react';
 
 import { SunsetStyle } from './styles';
 
-const Sunset: React.FC = () => {
+interface Props {
+    toggleTheme(): void
+}
+
+const Sunset: React.FC<Props> = ({toggleTheme}) => {
 
     return (
         <SunsetStyle>
-            <div className="circle" id="sunset"></div>
+            <div onClick={toggleTheme} className="circle" id="sunset"></div>
         </SunsetStyle>
     );
     
