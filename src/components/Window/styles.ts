@@ -6,7 +6,7 @@ export const WindowStyle = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    grid-gap: 30px;
+    grid-gap:  25px 30px;
     
 
     .window-light {

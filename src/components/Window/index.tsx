@@ -58,13 +58,13 @@ const Window: React.FC = () => {
             </div>
             {/* row 6 */}
             <div className="window-light">
-                <input id="check-9" type="checkbox" className="check-window"/>
-                <label htmlFor="check-9"><div className="label-check"></div></label>
+                <input id="check-11" type="checkbox" className="check-window"/>
+                <label htmlFor="check-11"><div className="label-check"></div></label>
             </div>
 
             <div className="window-light">
-                <input id="check-10" type="checkbox" className="check-window"/>
-                <label htmlFor="check-10"><div className="label-check"></div></label>
+                <input id="check-12" type="checkbox" className="check-window"/>
+                <label htmlFor="check-12"><div className="label-check"></div></label>
             </div>      
             
         </WindowStyle>    
