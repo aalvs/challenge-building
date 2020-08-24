@@ -9,30 +9,28 @@ export const WindowStyle = styled.div`
     grid-gap: 30px;
     
 
-    .window {
+    .window-light {
+        width: 30px;
+        height: 40px;
+        background: #ffffff;
+        display: flex;
+        justify-content: center;
+    }
+
+    .window-light input {
+        display: none;
+    }
+
+    .window-light input + label:before {
+        content: "";
+        display: inline-block;
         width: 30px;
         height: 40px;
         background: ${props => props.theme.colors.WindowOff};
         cursor: pointer;
     }
 
-    .window-dark {
-        width: 30px;
-        height: 40px;
+    .check-window:checked + label:before {
         background: ${props => props.theme.colors.WindowOn};
-        cursor: pointer;
     }
-
-    .window input {
-        display: none;
-    }
-
-    .window input + label:before {
-        content: "";
-        width: 30px;
-        height: 30px;
-        background-color: red;
-        cursor: pointer;
-    }
-
 `;
