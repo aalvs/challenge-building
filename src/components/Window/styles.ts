@@ -5,7 +5,7 @@ export const WindowStyle = styled.div`
     padding-bottom: 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-gap:  25px 30px;
     
 

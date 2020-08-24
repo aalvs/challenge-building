@@ -4,7 +4,7 @@ export const SunsetStyle = styled.div`
     .circle {  
         position: relative;
         left: 180px;
-        margin-bottom: 100px;
+        margin-bottom: 80px;
         width: 110px;
         height: 110px;
         border-radius: 50%;
