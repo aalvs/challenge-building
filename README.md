@@ -8,6 +8,10 @@ Escreva uma aplicação usando React e as bibliotecas da sua escolha, para const
 
 ---
 
+<div align='center'>
+<img src=".github/thumbnail.png">
+</div>
+
 # ⚙ Funcionalidades
 
 - Ligar e desligar as luzes ao clicar nas janelas;
