@@ -6,23 +6,34 @@ import light from './styles/themes/light';
 import dark from './styles/themes/dark';
 import Sunset from './components/Sunset';
 import api from './services/api'
-import axios from 'axios';
 
 function App() {
 
-  /* Função para pegar location do browser */
+  
   const [location, setLocation] = useState(false);
+  const [weather, setWeather] = useState(false);
+  const [theme, setDarkTheme] = useState(light);
 
+  let getWeather = async (lat, long) => {
+    let response = await api.get('results', {
+      params: {
+        
+      }
+      
+    });
+    setWeather(response.data);
+
+  }
+
+  /* Função para pegar location do browser */
   useEffect(() => {
     navigator.geolocation.getCurrentPosition((position)=>{
-      console.log(position.coords.latitude, position.coords.longitude);
+      getWeather(position.coords.latitude, position.coords.longitude);
       setLocation(true)
     })
   }, [])
 
   /* Função para ativar darktheme ao clicar no sun */
-  const [theme, setDarkTheme] = useState(light);
-
   const toggleTheme = () => {
     setDarkTheme(theme.title === 'light' ? dark : light);
   }
