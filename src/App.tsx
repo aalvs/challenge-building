@@ -8,26 +8,29 @@ import Sunset from "./components/Sunset";
 import api from "./services/api";
 
 function App() {
-  const [location, setLocation] = useState(false);
-  const [weather, setWeather] = useState(false);
+  
   const [theme, setDarkTheme] = useState(light);
+  const [weather, setweather] =useState('');
 
-  const getWeather = async () => {
-    const response = await api.post("results", {
-      params: {
-        
-      },
-    });
-    setWeather(response.data);
-  };
+  useEffect(() => {
+    api.get('results').then(response => {
+      const { getWeather } = response.data;
 
-  /* Função para pegar location do browser */
+      setweather(getWeather);
+    })
+  }, []);
+
+
+
+  /* 
+  const [location, setLocation] = useState(false);
   useEffect(() => {
     navigator.geolocation.getCurrentPosition((position) => {
       console.log(position.coords.latitude, position.coords.longitude);
       setLocation(true);
     });
   }, []);
+  */
 
   /* Função para ativar darktheme ao clicar no sun */
   const toggleTheme = () => {
