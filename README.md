@@ -1,12 +1,6 @@
-<div align='center'>
-<img src=".github/logo.png" width='250'>
-</div>
-
 ## 🚀 Desafio
 
 Escreva uma aplicação usando React e as bibliotecas da sua escolha, para construir a seguinte cena: Um prédio com 12 janelas. Ao clicar nas janelas o usuário liga e desliga as luzes das janelas. A cena também contém um controle com um botão que permite e ligar e desligar todas as janelas. Use a Sunset Sunrise API (https://sunrise-sunset.org/api) para mudar automaticamente a cena dependendo se está noite ou dia no seu local. Ou seja, utilize API do browser de geolocalização.
-
-[Clique aqui para conferir o deploy da aplicação](https://challenge-aftersale-building.vercel.app/)
 
 ---
 
@@ -34,12 +28,6 @@ Escreva uma aplicação usando React e as bibliotecas da sua escolha, para const
 <br/>
 <a href='https://sunrise-sunset.org/api'>Sunrise Sunset API</a>
 <br/>
-
-
-
-# 📝 Sobre o projeto
-
-Este é um projeto para um processo seletivo. Seu principal objetivo é facilitar a avaliação dos recrutadores.
 
 ---
 
