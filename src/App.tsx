@@ -8,29 +8,31 @@ import Sunset from "./components/Sunset";
 import api from "./services/api";
 
 function App() {
-  
-  const [theme, setDarkTheme] = useState(light);
-  const [weather, setweather] =useState('');
-
-  useEffect(() => {
-    api.get('results').then(response => {
-      const { getWeather } = response.data;
-
-      setweather(getWeather);
-    })
-  }, []);
-
-
-
-  /* 
+  // eslint-disable-next-line
   const [location, setLocation] = useState(false);
+  // eslint-disable-next-line
+  const [weather, setWeather] = useState(false);
+  // eslint-disable-next-line
+  const [theme, setDarkTheme] = useState(light);
+
+  // eslint-disable-next-line
+  const getWeather = async () => {
+    const response = await api.post("results", {
+      params: {
+        
+      },
+    });
+    setWeather(response.data);
+  };
+
+  /* Função para pegar location do browser */
   useEffect(() => {
     navigator.geolocation.getCurrentPosition((position) => {
       console.log(position.coords.latitude, position.coords.longitude);
       setLocation(true);
     });
   }, []);
-  */
+
 
   /* Função para ativar darktheme ao clicar no sun */
   const toggleTheme = () => {
